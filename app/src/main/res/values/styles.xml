@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:statusBarColor">#070c36</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/google_sans_regular</item>
+    </style>
+
+    <style name="headerTitleLabel" parent="android:Widget.TextView">
+        <item name="android:textColor">#202E3E</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:fontFamily">@font/google_sans_medium</item>
+    </style>
+
+    <style name="filterParameteresLabel" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textColorGrey</item>
+        <item name="android:textSize">17dp</item>
+        <item name="android:fontFamily">@font/google_sans_regular</item>
+    </style>
+
+    <style name="darkNavyBlueButton" parent="android:Widget.Button">
+        <item name="android:background">@drawable/navyblue_button_rounded</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="skyBlueButton" parent="android:Widget.Button">
+        <item name="android:background">@drawable/skyblue_button_rounded</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="moreButton" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@drawable/more_icon</item>
+    </style>
+    <style name="horizontalMoreButton" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@drawable/icon_more_horizontal</item>
+    </style>
+
+    <style name="progressBarSkyBlue" parent="@style/Theme.AppCompat">
+        <item name="colorAccent">@color/skyBlue</item>
+    </style>
+
+    <style name="tabFont" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/google_sans_medium</item>
+    </style>
+
+    <style name="AppTheme.PopUp">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+</resources>

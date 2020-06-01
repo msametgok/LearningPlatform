@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    tools:context=".Activities.SignUpActivity"
+    android:layout_marginHorizontal="40dp">
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        app:SpinKit_Color="@color/textColorGrey"
+        android:visibility="gone"
+        android:elevation="200dp"
+        style="@style/SpinKitView.Circle"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarThumbVertical="@null">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:paddingVertical="50dp"
+            android:focusedByDefault="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:id="@+id/applicationLogo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="29dp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/textForSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/applicationLogo"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/google_sans_medium"
+                android:textColor="@color/textColorBlack"
+                android:textSize="27sp"
+                android:text="Sign Up Focus Time" />
+
+            <TextView
+                android:id="@+id/nameForSignUpTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textForSignUp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/google_sans_regular"
+                android:text="Name"
+                android:textColor="@color/loginViewText"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/nameForSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameForSignUpTitle"
+                android:drawableLeft="@drawable/smaller_email_alternavite_icon"
+                android:drawablePadding="10dp"
+                android:hint=""
+                android:textSize="17sp"
+                android:textColorHint="@color/loginViewText"
+                android:textColor="@color/textColorGrey"
+                android:textCursorDrawable="@null"
+                android:windowSoftInputMode="adjustPan"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:backgroundTint="@color/loginViewText"
+                android:paddingBottom="10dp"
+                android:background="@drawable/edt_bg_selector"
+                android:inputType="textEmailAddress"/>
+
+            <TextView
+                android:id="@+id/emailAddressForSignUpTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameForSignUp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/google_sans_regular"
+                android:text="Email Address"
+                android:textColor="@color/loginViewText"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/emailAddressForSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailAddressForSignUpTitle"
+                android:drawableLeft="@drawable/smaller_email_alternavite_icon"
+                android:drawablePadding="10dp"
+                android:hint=""
+                android:textSize="17sp"
+                android:textColorHint="@color/loginViewText"
+                android:textColor="@color/textColorGrey"
+                android:textCursorDrawable="@null"
+                android:windowSoftInputMode="adjustPan"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:backgroundTint="@color/loginViewText"
+                android:paddingBottom="10dp"
+                android:background="@drawable/edt_bg_selector"
+                android:inputType="textEmailAddress"/>
+            <TextView
+                android:id="@+id/passwordForSignUpTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailAddressForSignUp"
+                android:text="Password"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/google_sans_regular"
+                android:textSize="16sp"
+                android:textColor="@color/loginViewText"/>
+            <EditText
+                android:id="@+id/passwordForSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passwordForSignUpTitle"
+                android:drawableLeft="@drawable/smaller_key_alternavite_icon"
+                android:drawablePadding="10dp"
+                android:hint=""
+                android:textSize="17sp"
+                android:textColorHint="@color/loginViewText"
+                android:textColor="@color/textColorGrey"
+                android:textCursorDrawable="@null"
+                android:windowSoftInputMode="adjustPan"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:backgroundTint="@color/loginViewText"
+                android:paddingBottom="10dp"
+                android:background="@drawable/edt_bg_selector"
+                android:inputType="textPassword"/>
+            <Button
+                android:id="@+id/createAccount"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded_custom_blue_button"
+                android:textColor="@color/white"
+                android:text="Create Account"
+                android:textAllCaps="false"
+                android:fontFamily="@font/google_sans_bold"
+                android:textSize="18dp"
+                android:layout_below="@id/passwordForSignUp"
+                android:layout_marginTop="20dp"
+                style="?android:attr/borderlessButtonStyle"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
